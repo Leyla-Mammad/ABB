@@ -79,9 +79,9 @@ body {
   padding: 30px 0;
 }
 
-.logo a {
+.color {
   text-decoration: none;
-  color: black;
+ color: black;
 }
 
 .logo-right {
@@ -99,6 +99,22 @@ body {
   color: #0056c1;
   margin-left: 10px;
 }
+.colorless{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.442);
+}
+.colorles{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.442);
+}
+.colorless:hover{
+  color: black;
+  transition: 0.5s;
+}
+.colorles:hover{
+  color: black;
+  transition: 0.5s;
+}
 
 .sections {
   width: 55%;
@@ -113,3 +129,93 @@ body {
   text-decoration: none;
   color: black;
 }/*# sourceMappingURL=style.css.map */
+
+.underline{
+  position: relative;
+  z-index: 1;
+}
+.underline::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  background-color: black;
+
+}
+.underline:hover::after{
+  width: 100%;
+}
+.text{
+  position: relative;
+  z-index: 1;
+}
+.text::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -20px;
+  left: 0;
+  height: 3px;
+  background-color:#0056c1;
+  transition: 1s;
+  width: 0;
+}
+.text:hover::after{
+  width: 100%;
+}
+
+.button:hover{
+ background-color: #0056c1;
+ color: #f9f9f9;
+ transition: 0.5s;
+}
+
+.phone-header{
+    display: none;
+}
+
+@media(max-width:576px){
+#comp{ display: none;}
+.phone-header{display: block;}
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+.phone-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+}
+.ferdi{
+  width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: smaller;
+    justify-content: space-around;
+}
+.search{
+  width: 35%;
+  font-size: smaller;
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.phone-logo{
+  padding: 15px 10px;
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone-header a{
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+}

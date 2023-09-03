@@ -49,8 +49,14 @@ flex-wrap: wrap;
     color: #0056c1;
     border: 2px solid #0056c1;
     border-radius: 30px;
-    
     padding: 5px 10px;
+    background-color: #e9204f;
+    
+}
+.button:hover{
+    background-color: #0056c1;
+    color: #0056c1;
+
 }
 
 .logo img{
@@ -109,3 +115,5 @@ margin: 0 40px;
     text-decoration: none;
     color: black;
 }
+
+
